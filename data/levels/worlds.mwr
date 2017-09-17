@@ -1,0 +1,10 @@
+total = 3
+world = World 1
+file = world1/world1
+scores = world1.mwr
+world = World 2
+file = world2/world2
+scores = world2.mwr
+world = World 3
+file = world3/world3
+scores = world3.mwr

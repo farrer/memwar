@@ -1,0 +1,36 @@
+numBlocks = 26
+availableChallenge = zosima
+blockMesh = block/block.mesh
+blockPosition = -2 -5
+blockPosition = -1 -5
+blockPosition = 0 -5
+blockPosition = 1 -5
+blockPosition = 2 -5
+blockPosition = 2 -4
+blockPosition = 2 -3
+blockPosition = -1 -2
+blockPosition = 0 -2
+blockPosition = 1 -2
+blockPosition = 2 -2
+blockPosition = 2 -1
+blockPosition = 2 0
+blockPosition = 2 1
+blockPosition = -2 1
+blockPosition = -1 1
+blockPosition = 0 1
+blockPosition = 1 1
+
+blockPosition = -2 -4
+blockPosition = -2 -3
+blockPosition = -2 -2
+blockPosition = -2 -1
+blockPosition = -2 0
+blockPosition = -1 -1
+blockPosition = 0 -1
+blockPosition = 1 -1
+
+
+movesTwoStars = 90
+movesThreeStars = 62
+timeTwoStars = 60
+timeThreeStars = 45

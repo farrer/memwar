@@ -1,0 +1,47 @@
+numBlocks = 34
+availableChallenge = punk
+availableChallenge = thief
+availableChallenge = bomb
+availableChallenge = alien
+blockMesh = block/block.mesh
+blockPosition = -2 -5
+blockPosition = -1 -5
+blockPosition = 0 -5
+blockPosition = 1 -5
+blockPosition = 2 -5
+blockPosition = 2 -4
+blockPosition = 2 -3
+blockPosition = -1 -2
+blockPosition = 0 -2
+blockPosition = 1 -2
+blockPosition = 2 -2
+blockPosition = 2 -1
+blockPosition = 2 0
+blockPosition = 2 1
+blockPosition = -2 1
+blockPosition = -1 1
+blockPosition = 0 1
+blockPosition = 1 1
+
+blockPosition = -2 -4
+blockPosition = -2 -3
+blockPosition = -2 -2
+blockPosition = -2 -1
+blockPosition = -2 0
+blockPosition = -1 -1
+blockPosition = 0 -1
+blockPosition = 1 -1
+
+blockPosition = -1 -4
+blockPosition = 0 -4
+blockPosition = 1 -4
+blockPosition = -2 2
+blockPosition = -1 2
+blockPosition = 0 2
+blockPosition = 1 2
+blockPosition = 2 2
+
+movesTwoStars = 160
+movesThreeStars = 100
+timeTwoStars = 130
+timeThreeStars = 70

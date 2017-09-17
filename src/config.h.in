@@ -1,0 +1,15 @@
+#ifndef _memwar_config_h
+#define _memwar_config_h
+
+namespace MemWar
+{
+
+#define PACKAGE @PACKAGE@
+#define VERSION @VERSION@
+#define DATADIR @datadir@
+
+}
+
+#endif
+
+

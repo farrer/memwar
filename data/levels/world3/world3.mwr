@@ -1,0 +1,87 @@
+totalLevels = 18
+name = World 3
+
+level = 3-1
+levelFile = world3/level1.lvl
+
+level = 3-2
+levelFile = world3/level2.lvl
+neededStars = 0,1
+
+level = 3-3
+levelFile = world3/level3.lvl
+neededStars = 1,1
+
+level = 3-4
+levelFile = world3/level4.lvl
+neededStars = 2,1
+
+level = 3-5
+levelFile = world3/level5.lvl
+neededStars = 0,2
+neededStars = 1,2
+neededStars = 2,2
+neededStars = 3,2
+unlockInfo = You need at least two stars|in all previous levels.
+
+level = 3-6
+levelFile = world3/level6.lvl
+neededStars = 4,1
+
+level = 3-7
+levelFile = world3/level7.lvl
+neededStars = 5,1
+
+level = 3-8
+levelFile = world3/level8.lvl
+neededStars = 6,1
+
+level = 3-9
+levelFile = world3/level9.lvl
+neededStars = 7,1
+
+level = 3-10
+levelFile = world3/level10.lvl
+neededStars = 0,2
+neededStars = 1,2
+neededStars = 2,2
+neededStars = 3,2
+neededStars = 4,2
+neededStars = 5,2
+neededStars = 6,2
+neededStars = 7,2
+neededStars = 8,2
+unlockInfo = You need at least two stars|in all previous levels.
+
+level = 3-11
+levelFile = world3/level11.lvl
+neededStars = 9,1
+
+level = 3-12
+levelFile = world3/level12.lvl
+neededStars = 10,1
+
+level = 3-13
+levelFile = world3/level13.lvl
+neededStars = 11,1
+
+level = 3-14
+levelFile = world3/level14.lvl
+neededStars = 12,1
+
+level = 3-15
+levelFile = world3/level15.lvl
+neededStars = 13,1
+
+level = 3-16
+levelFile = world3/level16.lvl
+neededStars = 14,1
+
+level = 3-17
+levelFile = world3/level17.lvl
+neededStars = 15,1
+
+level = 3-18
+levelFile = world3/level18.lvl
+neededStars = 16,1
+
