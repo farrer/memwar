@@ -1,7 +1,7 @@
 #include "world.h"
 
 #include <OGRE/OgreStringConverter.h>
-#include <kobold/defparser.h>
+#include <kobold/ogre3d/ogredefparser.h>
 #include <kobold/userinfo.h>
 
 #include <iostream>
@@ -218,7 +218,7 @@ World::World(Ogre::String definitionFile, Ogre::String scoresFile,
       Ogre::String newButtonFileName, Ogre::Overlay* ogreOverlay) :
    Selector(ogreOverlay)
 {
-   Kobold::DefParser def;
+   Kobold::OgreDefParser def;
    Ogre::String key, value;
 
    WorldLevel* curLevel = NULL;
@@ -229,7 +229,7 @@ World::World(Ogre::String definitionFile, Ogre::String scoresFile,
    this->newButtonFileName = newButtonFileName;
 
    /* Try to load world definiton's file. */
-   if(!def.load(definitionFile))
+   if(!def.load(definitionFile, false, false))
    {
       return;
    }
@@ -278,7 +278,7 @@ World::World(Ogre::String definitionFile, Ogre::String scoresFile,
    endCreation();
 
    /* Try to load scores file */
-   if(def.load(Kobold::UserInfo::getUserHome() + scoresFile, true))
+   if(def.load(Kobold::UserInfo::getUserHome() + scoresFile, true, false))
    {
 
       int curLevelIndex = -1;

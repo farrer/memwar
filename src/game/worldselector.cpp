@@ -1,6 +1,6 @@
 #include "worldselector.h"
 
-#include <kobold/defparser.h>
+#include <kobold/ogre3d/ogredefparser.h>
 #include <goblin/screeninfo.h>
 
 using namespace MemWar;
@@ -69,10 +69,10 @@ void WorldInfo::setScoresFileName(Ogre::String fileName)
  ***************************************************************************/
 WorldSelector::WorldSelector(Ogre::Overlay* ogreOverlay) : Selector(ogreOverlay)
 {
-   Kobold::DefParser def;
+   Kobold::OgreDefParser def;
    Ogre::String key, value;
 
-   if(!def.load(WORLDS_FILE))
+   if(!def.load(WORLDS_FILE, false, false))
    {
       return;
    }

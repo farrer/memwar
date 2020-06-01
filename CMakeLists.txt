@@ -85,7 +85,7 @@ add_library(memwarlib ${MEMWAR_LIB_SOURCES} ${MEMWAR_LIB_HEADERS} )
 # Make Binaries
 add_executable(memwar WIN32 ${MEMWAR_SOURCES} ${MEMWAR_HEADERS} )
 target_link_libraries(memwar memwarlib ${GOBLIN_LIBRARY} 
-   ${KOSOUND_LIBRARY} ${KOBOLD_LIBRARY}
+   ${KOSOUND_LIBRARY} ${KOBOLD_LIBRARIES}
    ${OGRE_LIBRARIES} 
    ${OGRE_Overlay_LIBRARIES} 
    ${OGRE_RTShaderSystem_LIBRARIES}

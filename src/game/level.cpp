@@ -4,7 +4,7 @@
 
 #include "level.h"
 #include "mblock.h"
-#include <kobold/defparser.h>
+#include <kobold/ogre3d/ogredefparser.h>
 #include <kosound/sound.h>
 
 namespace MemWar
@@ -28,7 +28,7 @@ Level::Level(World* world, WorldLevel* worldLevel,
       Ogre::Overlay* ogreOverlay, bool replaying)
 {
    int i,j,r=0;
-   Kobold::DefParser def;
+   Kobold::OgreDefParser def;
    Ogre::String key, value;
    Ogre::String blockMesh = BLOCK_DEFAULT_MESH;
    Ogre::String blockName, materialName;
@@ -89,7 +89,7 @@ Level::Level(World* world, WorldLevel* worldLevel,
    curInfoChallenge = NULL;
 
    /* Open the Level definition */
-   if(!def.load(worldLevel->getFileName()))
+   if(!def.load(worldLevel->getFileName(), false, false))
    {
       return;
    }
