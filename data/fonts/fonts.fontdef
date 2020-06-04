@@ -1,4 +1,4 @@
-scoreFont
+font scoreFont
 {
    type image
    source scorefont.png
@@ -17,7 +17,7 @@ scoreFont
    glyph R 0.19140625 0.734375 0.46875 1.0
 }
 
-freeSans24
+font freeSans24
 {
    type   image
    source freeSans24.png
@@ -184,7 +184,7 @@ freeSans24
    glyph u255 0.0 0.41015625 0.0224609375 0.466796875
 }
 
-numberFont
+font numberFont
 {
    type	   image
    source	numberfont.png
@@ -203,7 +203,7 @@ numberFont
 
 
 
-infoFont
+font infoFont
 {
 	type	   image
 	source	infofont.png
@@ -466,13 +466,12 @@ infoFont
 	glyph u255 0.957031 0.9375 0.980469 1
 }
 
-infoFontOut
+font infoFontOut
 {
 	type	   image
 	source	infofontout.png
 
    glyph ! 0.0859375 0.125 0.101563 0.1875
-   glyph " 0.146484 0.125 0.166016 0.1875
    glyph # 0.201172 0.125 0.236328 0.1875
    glyph $ 0.269531 0.125 0.292969 0.1875
    glyph % 0.324219 0.125 0.363281 0.1875

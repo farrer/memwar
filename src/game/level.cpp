@@ -5,6 +5,7 @@
 #include "level.h"
 #include "mblock.h"
 #include <kobold/ogre3d/ogredefparser.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 #include <kosound/sound.h>
 
 namespace MemWar
@@ -517,7 +518,8 @@ void Level::select(Ogre::SceneNode* scNode)
       /* Face it up */
       if(b->setFaceUp())
       {
-         Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "tap1.ogg");
+         Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "tap1.ogg",
+               new Kobold::OgreFileReader());
          if(selPair.getBlock1() == NULL)
          {
             selPair.setBlock1(b);

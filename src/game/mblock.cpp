@@ -1,6 +1,7 @@
 
 #include "mblock.h"
 #include <kosound/sound.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 
 namespace MemWar
 {
@@ -168,7 +169,8 @@ bool Block::setFaceDown()
 {
    if (faceup) {
       setTargetOrientation(0.0f, 0.0f, 180.0f);
-      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "tap1.ogg");
+      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "tap1.ogg",
+            new Kobold::OgreFileReader());
    }
    faceup = false;
    faceDownAtTimer = false;

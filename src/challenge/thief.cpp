@@ -5,6 +5,7 @@
 #include "../game/pair.h"
 
 #include <kosound/sound.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 
 namespace MemWar
 {
@@ -75,7 +76,8 @@ void Thief::pairMatched(Pair* p)
    {
       /* Got it! Must end the challenge */
       active = false;
-      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "police.ogg");
+      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "police.ogg",
+            new Kobold::OgreFileReader());
    }
 }
 
@@ -107,7 +109,8 @@ void Thief::apply()
    /* Let's unMatch and repositionate all pairs */
    reposPairs(curPairs, numPairs, true);
 
-   Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "thief.ogg");
+   Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "thief.ogg", 
+         new Kobold::OgreFileReader());
 
    
    delete[] curPairs;

@@ -24,7 +24,7 @@ void Options::load()
    Kobold::DefParser def;
    Ogre::String key, value;
 
-   if(!def.load(Kobold::UserInfo::getUserHome() + OPTIONS_FILENAME, true))
+   if(!def.load(Kobold::UserInfo::getUserHome() + OPTIONS_FILENAME, false))
    {
       return;
    }

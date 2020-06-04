@@ -6,6 +6,7 @@
 #include "../game/pair.h"
 
 #include <kosound/sound.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 
 namespace MemWar
 {
@@ -84,7 +85,8 @@ void Alien::pairNotMatched(Pair* p)
    if(!succeeded)
    {
       failed = true;
-      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "alien1.ogg");
+      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "alien1.ogg",
+            new Kobold::OgreFileReader());
    }
 }
 
@@ -112,7 +114,8 @@ void Alien::pairMatched(Pair* p)
       /* Got it, so must abduct the blocks */
       abduct();
       succeeded = true;
-      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "alien3.ogg");
+      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "alien3.ogg",
+            new Kobold::OgreFileReader());
    }
 }
 

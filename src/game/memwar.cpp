@@ -14,6 +14,7 @@
 #include <kobold/userinfo.h>
 #include <goblin/camera.h>
 #include <goblin/screeninfo.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 
 using namespace MemWar;
 
@@ -198,7 +199,7 @@ bool MemWarMain::doCycleInit(int callCounter, bool& shouldAbort)
 
    /* Add music */
    Options::applySoundOptions();
-   Kosound::Sound::loadMusic("factory.ogg");
+   Kosound::Sound::loadMusic("factory.ogg", new Kobold::OgreFileReader());
 
    return true;
 }

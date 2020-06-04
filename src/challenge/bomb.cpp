@@ -4,6 +4,7 @@
 #include "../game/level.h"
 #include "../game/pair.h"
 #include <kosound/sound.h>
+#include <kobold/ogre3d/ogrefilereader.h>
 
 namespace MemWar
 {
@@ -76,7 +77,8 @@ void Bomb::pairMatched(Pair* p)
    {
       /* Got it! Must disable the timer */
       active = false;
-      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "bomb_off.ogg");
+      Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "bomb_off.ogg",
+            new Kobold::OgreFileReader());
    }
 }
 
@@ -85,7 +87,8 @@ void Bomb::pairMatched(Pair* p)
  ***********************************************************************/
 void Bomb::apply()
 {
-   Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "bomb.ogg");
+   Kosound::Sound::addSoundEffect(SOUND_NO_LOOP, "bomb.ogg", 
+         new Kobold::OgreFileReader());
 
    curLevel->shuffle();
 }
